@@ -13,7 +13,7 @@ https://git-scm.com/downloads/win
 在该文件夹下右键选择用git bash打开可以直接操作当前目录
 ![img.png](img.png)
 
-为当前git配置 name 和email（随意即可）
+为当前git本地仓库配置 name 和email（随意即可）
 `git config --global user.name"Zorin"`  
 `git config --global user.email "XXXXXXX@qq.com"`  
 在当前仓库下初始化  
@@ -53,8 +53,11 @@ $ssh-keygen
 git有三个分区 分别成为工作区 暂缓区 本地仓库  ，当在本地commit之后才可以将内容推送至远程仓库  
 首先将工作区的内容添加至暂缓区，完成修改后最后提交至本地仓库。
 ![img_6.png](img_6.png)
+如果本地仓库分支名称为master则需要修改为main，因为github为main需要一致（上产至github的main分支中）  
+`git branch -m master main`
 
- 将本地仓库内容推送至github的某个仓库 `git push 远程仓库名称 远程分支名：本地分支命`     
- 将github某个仓库拉取至本地 `git pull 远程仓库名称 远程分支名：本地分支命`  
-以上的仓库名称和分支命均可以省略，省略则默认为origin main:main
+ 第一次将本地仓库内容推送至github的某个仓库 `git push -u 远程仓库名称 远程分支名`     
+ 第一次将github某个仓库拉取至本地 `git pull -u 远程仓库名称 远程分支名`  
+之后可直接`git push` 和 `git pull`， 默认为第一次的远程仓库名称和远程分支名  
 **速度慢解决方案参考 git clone pull push速度慢解决**
+**推送出现冲突则可能是本地仓库和远程仓库的内容不一致 参考 推送出现冲突**
