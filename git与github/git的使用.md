@@ -59,5 +59,11 @@ git有三个分区 分别成为工作区 暂缓区 本地仓库  ，当在本地
  第一次将本地仓库内容推送至github的某个仓库 `git push -u 远程仓库名称 远程分支名`     
  第一次将github某个仓库拉取至本地 `git pull -u 远程仓库名称 远程分支名`  
 之后可直接`git push` 和 `git pull`， 默认为第一次的远程仓库名称和远程分支名  
-**速度慢解决方案参考 git clone pull push速度慢解决**
-**推送出现冲突则可能是本地仓库和远程仓库的内容不一致 参考 推送出现冲突**
+
+**推送出现冲突则可能是本地仓库和远程仓库的内容不一致 需要先将远程仓库的拉取下来**  
+使用 --allow-unrelated-histories 选项进行拉取：
+在执行拉取操作时，添加 --allow-unrelated-histories 选项，以允许合并不相关的历史：  
+`git pull git-github main --allow-unrelated-histories ` 
+这将允许 Git 合并本地和远程仓库的历史，即使它们没有共同的祖先。
+
+**拉取推送速度慢速度慢解决方案参考 [git clone pull push速度慢解决](git clone pull push速度慢解决.md)**  
