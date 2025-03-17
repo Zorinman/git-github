@@ -19,6 +19,10 @@ https://git-scm.com/downloads/win
 在当前仓库下初始化  
 `git init`
 
+如果只要在本地仓库做版本关联那么这里就完成了全部配置，之后只需根据[git常见命令](https://github.com/Zorinman/git-github/blob/main/git%E4%B8%8Egithub/git%E7%9A%84%E5%9F%BA%E6%9C%AC%E5%91%BD%E4%BB%A4.md)
+进行操作即可进行版本控制
+------
+
 ### 3.将git和github进行连接(通过SSH)
 为git生成一对密钥用于SSH连接认证
 将密钥文件生成于默认路径C:\Users\Dandelin\.ssh(gitbash中：~/.ssh)
@@ -50,8 +54,10 @@ $ssh-keygen
 **建议一个本地仓库对应一个远程仓库**（也可以在一个本地仓库路径下使用git remote add 添加多个远程仓库 ）
 ### 5.推送，拉取仓库内容
 
-git有三个分区 分别成为工作区 暂缓区 本地仓库  ，当在本地commit之后才可以将内容推送至远程仓库  
-首先将工作区的内容添加至暂缓区，完成修改后最后提交至本地仓库。
+git有三个分区 分别成为工作区 暂缓区 本地仓库
+首先将工作区的内容add添加至暂缓区，完成修改后最后commit提交至本地仓库
+当在本地commit之后才可以将内容推送至远程仓库
+
 ![img_6.png](img_6.png)
 如果本地仓库分支名称为master则需要修改为main，因为github为main需要一致（上产至github的main分支中）  
 `git branch -m master main`
