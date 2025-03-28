@@ -36,18 +36,18 @@ $ssh-keygen
 # 生成完成
 ```
 最终会生成两个文件.pub后缀的为公钥，打开复制里面的公钥内容  
-![img_1.png](img_1.png)  
+![img_1.png](图片/img_1.png)  
 
 打开github 点击右上角头像处 选择Setting  
-![img_2.png](img_2.png)  
+![img_2.png](图片/img_2.png)  
 打开SSH and GPG keys  
-![img_3.png](img_3.png)  
+![img_3.png](图片/img_3.png)  
 创建SSH key ，并将git生成的公钥内容粘贴即可  
-![img_4.png](img_4.png)  
+![img_4.png](图片/img_4.png)  
 
 ### 4.关联远程仓库
 选择github上需要关联的仓库，查看并复制github的SSH连接  
-![img_5.png](img_5.png)  
+![img_5.png](图片/img_5.png)  
 在git bash 中将git于github上的仓库关联  
 `git remote add origin git@github.com:Zorinman/K8S.git  ` origin为github上需要关联仓库的名字 可自行修改（如我的为K8S）  
 
@@ -58,7 +58,7 @@ git有三个分区 分别成为工作区 暂缓区 本地仓库
 首先将工作区的内容add添加至暂缓区，完成修改后最后commit提交至本地仓库
 当在本地commit之后才可以将内容推送至远程仓库
 
-![img_6.png](img_6.png)
+![img_6.png](图片/img_6.png)
 如果本地仓库分支名称为master则需要修改为main，因为github为main需要一致（上产至github的main分支中）  
 `git branch -m master main`
 
