@@ -11,7 +11,7 @@ https://git-scm.com/downloads/win
 在本地创建一个文件夹用于本地仓库  
 这里我创建的仓库目录为 /E/gitrepo  
 在该文件夹下右键选择用git bash打开可以直接操作当前目录
-![img.png](img.png)
+![img.png](图片/img.png)
 
 为当前git本地仓库配置 name 和email（随意即可）
 `git config --global user.name"Zorin"`  
