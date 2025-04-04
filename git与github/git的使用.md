@@ -1,7 +1,7 @@
 参考视频  
 https://www.bilibili.com/video/BV1s3411g7PS/?spm_id_from=333.788.top_right_bar_window_history.content.click&vd_source=b9c639db66d1d92699bdd73eff797082  
 https://www.bilibili.com/video/BV1HM411377j?spm_id_from=333.788.videopod.sections&vd_source=b9c639db66d1d92699bdd73eff797082  
-
+⭐ 以下内容同样适用于git与gitlab关联  
 
 ### 1.首先下载git (for windows)
 
@@ -48,7 +48,7 @@ $ssh-keygen
 ### 4.关联远程仓库
 选择github上需要关联的仓库，查看并复制github的SSH连接  
 ![img_5.png](图片/img_5.png)  
-在git bash 中将git于github上的仓库关联  
+在git bash 中将git于github上的仓库关联 
 `git remote add origin git@github.com:Zorinman/K8S.git  ` origin为github上需要关联仓库的名字 可自行修改（如我的为K8S）  
 
 **建议一个本地仓库对应一个远程仓库**（也可以在一个本地仓库路径下使用git remote add 添加多个远程仓库 ）
@@ -62,8 +62,10 @@ git有三个分区 分别成为工作区 暂缓区 本地仓库
 如果本地仓库分支名称为master则需要修改为main，因为github为main需要一致（上产至github的main分支中）  
 `git branch -m master main`
 
- 第一次将本地仓库内容推送至github的某个仓库 `git push -u 远程仓库名称 远程分支名`     
+ 第一次通常先将远程仓库拉取到本地进行合并（无论远程仓库是不是空的） 否则有可能报错(如果远程仓库有提交记录而本地没有的话）  
  第一次将github某个仓库拉取至本地 `git pull -u 远程仓库名称 远程分支名`  
+ 第一次将本地仓库内容推送至github的某个仓库 `git push -u 远程仓库名称 远程分支名`     
+ 
 之后可直接`git push` 和 `git pull`， 默认为第一次的远程仓库名称和远程分支名  
 
 **推送出现冲突则可能是本地仓库和远程仓库的内容不一致 需要先将远程仓库的拉取下来**  
