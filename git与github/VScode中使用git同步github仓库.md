@@ -1,4 +1,4 @@
-**与git的使用中的流程类似**
+**与`git的使用.md`中的流程类似**
 ⭐第一次拉取和推送使用-u如`git push -u origin main`和`git pull -u origin main`这表示设置默认上游分支，后续就可以直接`git pull` 和`git push `不用加远程仓库名和分支名
 
 1.安装git
