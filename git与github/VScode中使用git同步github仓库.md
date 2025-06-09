@@ -23,10 +23,10 @@
 **远程仓库完全覆盖本地仓库（丢弃本地所有内容，强制同步远程内容）**
 本地仓库已经初始化并有提交删除等信息：`git pull origin main --force` 强制拉取远程 main 分支，覆盖本地冲突文件
 
-**远程仓库或者本地仓库一方完全为空**
-**情况1.本地仓库完全为空**：`git clone 仓库Https\SSH`
+**远程仓库或者本地仓库一方完全为空**  
+**情况1.本地仓库完全为空**：`git clone 仓库Https\SSH`  
 后续直接`git push -u origin main` 和`git pull  -u origin main`
-**情况2 远程仓库完全为空**
+**情况2 远程仓库完全为空**  
 直接 `git push -u origin main`
 
 ---------------
