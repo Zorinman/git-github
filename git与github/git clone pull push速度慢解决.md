@@ -1,3 +1,12 @@
+
+# HTTPS  
+直接在终端配置使用本地代理  
+git config --global http.proxy http://127.0.0.1:7890  
+git config --global https.proxy http://127.0.0.1:7890  
+
+
+
+# SSH
 由于防火墙原因导致速度过慢  
 我们可以使用工具利用Clash来配置代理使速度提高
 ![img_7.png](图片/img_7.png)
