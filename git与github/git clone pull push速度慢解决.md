@@ -1,6 +1,6 @@
 
 # HTTPS  
-直接在终端配置使用本地代理  
+配置当前用户的全局 Git 配置，即写入到 ~/.gitconfig 文件中，所有git都走代理
 git config --global http.proxy http://127.0.0.1:7890  
 git config --global https.proxy http://127.0.0.1:7890  
 
@@ -29,8 +29,7 @@ Host github.com
 https://nmap.org/ncat/
 ![img_8.png](图片/img_8.png)
 
-下载完成后需要ncat.exe的安装路径/E/netcat添加至gitbash中  
-`export PATH=$PATH:/E/netcat`
+下载完成后需要编辑环境变量添加`ncat.exe`的所在路径，也就是`/E/netcat/`  
 
 查看是否成功添加路径  
 ```
@@ -39,3 +38,6 @@ $ which nc
 
 ```
 成功配置.
+
+⭐注意 使用SSH连接如果你为了解决拉取速度慢在 `~/.ssh`的config文件中配置了代理加速， 那么你需要 `ncat`走代理带能拉取推送远程仓库，我们还需要下载`ncat`并且编辑环境变量中添加`ncat.exe`的所在路径（下载请看git clone pull push速度慢解决.md)
+⭐使用HttpS时如何连接的是私人仓库必须要带token，此时更推荐ssh

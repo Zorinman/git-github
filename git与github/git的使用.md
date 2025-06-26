@@ -2,6 +2,9 @@
 https://www.bilibili.com/video/BV1s3411g7PS/?spm_id_from=333.788.top_right_bar_window_history.content.click&vd_source=b9c639db66d1d92699bdd73eff797082  
 https://www.bilibili.com/video/BV1HM411377j?spm_id_from=333.788.videopod.sections&vd_source=b9c639db66d1d92699bdd73eff797082  
 ⭐ 以下内容同样适用于git与gitlab关联  
+⭐注意 使用SSH连接如果你为了解决拉取速度慢在 `~/.ssh`的config文件中配置了代理加速， 那么你需要 `ncat`走代理带能拉取推送远程仓库，我们还需要下载`ncat`并且编辑环境变量中添加`ncat.exe`的所在路径（下载请看git clone pull push速度慢解决.md)
+⭐使用HttpS时如何连接的是私人仓库必须要带token，此时更推荐ssh
+
 
 ### 1.首先下载git (for windows)
 
@@ -75,3 +78,4 @@ git有三个分区 分别成为工作区 暂缓区 本地仓库
 这将允许 Git 合并本地和远程仓库的历史，即使它们没有共同的祖先。
 
 **拉取推送速度慢速度慢解决方案参考 [git clone pull push速度慢解决](git clone pull push速度慢解决.md)**  
+

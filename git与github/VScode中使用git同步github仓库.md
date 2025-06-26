@@ -1,6 +1,7 @@
 **与`git的使用.md`中的流程类似**
 ⭐第一次拉取和推送使用-u如`git push -u origin main`和`git pull -u origin main`这表示设置默认上游分支，后续就可以直接`git pull` 和`git push `不用加远程仓库名和分支名
-
+⭐注意 使用SSH连接如果你为了解决拉取速度慢在 `~/.ssh`的config文件中配置了代理加速， 那么你需要 `ncat`走代理带能拉取推送远程仓库，我们还需要下载`ncat`并且编辑环境变量中添加`ncat.exe`的所在路径（下载请看git clone pull push速度慢解决.md)
+⭐使用HttpS时如何连接的是私人仓库必须要带token，此时更推荐ssh
 1.安装git
 
 2.初始化本地仓库可以直接在VScode的源代码管理中点击`初始化仓库`
@@ -50,8 +51,11 @@ git checkout feature/your-feature-name  # 切回你的分支
 git merge main                     # 将主分支更新合并到你的新分支
 ```
 
+
 `git push -u origin <新分支名>`
 这时候远程仓库会自动创建这个新分支
 
 8.**发送合并请求**
 在github远程仓库页面选择你的新分支，点击进行合并请求， 团队成员审核后，代码会合并到主分支（如 main）
+
+
