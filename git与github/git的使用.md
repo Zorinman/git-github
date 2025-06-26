@@ -77,5 +77,6 @@ git有三个分区 分别成为工作区 暂缓区 本地仓库
 `git pull git-github main --allow-unrelated-histories ` 
 这将允许 Git 合并本地和远程仓库的历史，即使它们没有共同的祖先。
 
-**拉取推送速度慢速度慢解决方案参考 [git clone pull push速度慢解决](git clone pull push速度慢解决.md)**  
+** 拉取推送速度慢速度慢解决方案参考 [git clone pull push速度慢解决](git clone pull push速度慢解决.md) **  
+
 
