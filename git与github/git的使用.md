@@ -17,7 +17,7 @@ https://git-scm.com/downloads/win
 ![img.png](图片/img.png)
 
 为当前git本地仓库配置 name 和email（随意即可）
-`git config --global user.name"Zorin"`  
+`git config --global user.name "Zorin"`  
 `git config --global user.email "XXXXXXX@qq.com"`  
 在当前仓库下初始化  
 `git init`
