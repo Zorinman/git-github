@@ -62,6 +62,7 @@ git merge main                     # 将主分支更新合并到你的新分支
 
 
 # 在团队TopMat的提交流程
+⭐本地分支`test`用于日常提交，最终将本地分支`test`有效的代码合并到本地分支`zhoulinguang`保证最终本地提交并推送到远程仓库的 `zhoulinguang`分支，然后在网页端请求合并到远程仓库保护分支`main`
 - 1.拉取项目到本地`git clone https地址`
 
 - 2.拉取后项目中自带.git文件，这时候已经自动关联了远程仓库
