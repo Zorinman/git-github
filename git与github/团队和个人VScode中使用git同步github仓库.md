@@ -67,7 +67,7 @@ git merge main                     # 将主分支更新合并到你的新分支
 
 - 2.拉取后项目中自带.git文件，这时候已经自动关联了远程仓库
 
-- 3.为了推送时不影响远程仓库主要的main分支，创建一个叫`zhoulinguang`新的分支并跳转到该分支： `git checkout -b zhoulinguang`
+- 3.为了推送时不影响远程仓库主要的main分支，创建一个叫`zhoulinguang`新的分支（跳转到该分支： `git checkout -b zhoulinguang`）
 
 - 4.此时通过`git branch -a` 可以查看所有分支， 可以看见绿色的是本地分支，*表示我当前在的本地分支
 红色表示远程仓库的所有分支和目前只想的分支
@@ -75,11 +75,11 @@ git merge main                     # 将主分支更新合并到你的新分支
 ![alt text](图片/image-9.png)
 
 
-- 5 在本地仓库再创建一个分支`test`
+- 5 在本地仓库再创建一个分支`test`用于日常提交
 
-- 6.提交本地修改到分支test `git add. `  `git commit -m "xxx"` ，**或者直接用vscode，记得写commit信息**
+- 6.提交本地日常修改到分支`test`
 
-- 7 在本地分支test的正确代码合并到本地分支`zhoulinguang`
+- 7 将本地分支`test`的最终正确代码合并到本地分支`zhoulinguang`
 
 - 8.直接推送本地分支`zhoulinguang`到远程，如果远程没有该分支则会自动创建：`git push -u origin zhoulinguang`，**或者直接在vscode上点击发布新分支**
 
