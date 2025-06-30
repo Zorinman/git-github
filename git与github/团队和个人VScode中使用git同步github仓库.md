@@ -10,7 +10,7 @@
 # 个人测试：
 
 3.**将git于github上的仓库关联（这里使用ssh,你也可以用HttpS）**
- `git remote add origin git@github.com:Zorinman/K8S.git`   origin为github上需要关联仓库的名字 可自行修改（如我的为K8S）
+ `git remote add origin git@github.com:Zorinman/K8S.git`   origin为自己定义的远程仓库的备注名  可自行修改（如我的远程仓库为K8S我可以直接使用默认的origin或者修改为K8S或者）
 
 4.**本地分支与远程分支名字保持一致（个人）**
 如需要：`git branch -m master main` 重命名本地主分支master为main
@@ -37,18 +37,18 @@
 
 4.**关联远程仓库** `git remote add origin 仓库Https\SSH`(可以是项目仓库，也可以是你fork的仓库)
 
-5.**在本地创建并切换到新分支（避免直接修改 main分支）**
-`git checkout -b <新分支名>`
+5.**在本地创建并切换到新分支A（避免直接修改 main分支）**
+`git checkout -b <新分支A>`
 
-6.**git commit -m 提交本地修改**
+6.**git commit -m 提交本地修改到远程分支A**
 
 7.**推送到远程仓库**
 推送前再进行一次同步 防止远程 main 分支在这期间可能有新更新
 ``` shell 
 git checkout main                  # 切换到主分支
 git pull origin main               # 拉取远程最新代码
-git checkout feature/your-feature-name  # 切回你的分支
-git merge main                     # 将主分支更新合并到你的新分支
+git merge feature/your-feature-name  # 合并功能分支（有冲突则需要手动解决）
+
 ```
 
 
