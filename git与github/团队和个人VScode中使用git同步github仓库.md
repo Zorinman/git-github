@@ -73,9 +73,14 @@ git merge main                     # 将主分支更新合并到你的新分支
 
 ![alt text](图片/image-9.png)
 
-- 5.提交本地修改 `git add. `  `git commit -m "xxx"` ，**或者直接用vscode，记得写commit信息**
 
-- 6.直接推送本地分支到远程，如果远程没有该分支则会自动创建：`git push -u origin zhoulinguang`，**或者直接在vscode上点击发布新分支**
+- 5 在本地仓库再创建一个分支`test`
 
-- 7.之后在git网站上可以看到新的推送信息，我们这时候点击创建合并请求，然后之后等管理员来合并就可以了
+- 6.提交本地修改到分支test `git add. `  `git commit -m "xxx"` ，**或者直接用vscode，记得写commit信息**
+
+- 7 在本地分支test的正确代码合并到本地分支`zhoulinguang`
+
+- 8.直接推送本地分支`zhoulinguang`到远程，如果远程没有该分支则会自动创建：`git push -u origin zhoulinguang`，**或者直接在vscode上点击发布新分支**
+
+- 9.之后在git网站上可以看到新的推送信息，我们这时候点击创建合并请求，然后之后等管理员来合并就可以了
  ![alt text](图片/image-10.png)
