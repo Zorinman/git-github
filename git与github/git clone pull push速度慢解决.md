@@ -4,6 +4,9 @@
 
 # HTTPS  
 配置当前用户的全局 Git 配置，即写入到 ~/.gitconfig 文件中，所有git都走代理
+查看当前gitconfig内容 cat ~/.gitconfig
+编辑 vim ~/.gitconfig
+
 git config --global http.proxy http://127.0.0.1:7890  
 git config --global https.proxy http://127.0.0.1:7890  
 
